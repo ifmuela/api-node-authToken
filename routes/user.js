@@ -9,5 +9,8 @@ const {
 
 router.post('/singUp', signUp)
 router.post('/signIn', signIn)
+router.get('/login', (req, res) => {
+  res.render('login')
+})
 
 module.exports = router
